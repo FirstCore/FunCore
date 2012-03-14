@@ -103,6 +103,7 @@ bool ChatHandler::HandleServerInfoCommand(const char* /*args*/)
     std::string uptime = secsToTimeString(sWorld->GetUptime());
     uint32 updateTime = sWorld->GetUpdateTime();
 
+    SendSysMessage(_FULLVERSION);
     PSendSysMessage("FReeDOM-WoW.BiZ");
     PSendSysMessage("Developer: Vitasic");
     PSendSysMessage(LANG_CONNECTED_PLAYERS, PlayersNum, MaxPlayersNum);

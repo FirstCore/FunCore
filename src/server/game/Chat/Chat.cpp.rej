@@ -1,0 +1,18 @@
+***************
+*** 416,421 ****
+          { "bindsight",      SEC_ADMINISTRATOR,  false, OldHandler<&ChatHandler::HandleBindSightCommand>,           "", NULL },
+          { "unbindsight",    SEC_ADMINISTRATOR,  false, OldHandler<&ChatHandler::HandleUnbindSightCommand>,         "", NULL },
+          { "playall",        SEC_GAMEMASTER,  false, OldHandler<&ChatHandler::HandlePlayAllCommand>,             "", NULL },
+          { NULL,             0,                  false, NULL,                                           "", NULL }
+      };
+  
+--- 424,432 ----
+          { "bindsight",      SEC_ADMINISTRATOR,  false, OldHandler<&ChatHandler::HandleBindSightCommand>,           "", NULL },
+          { "unbindsight",    SEC_ADMINISTRATOR,  false, OldHandler<&ChatHandler::HandleUnbindSightCommand>,         "", NULL },
+          { "playall",        SEC_GAMEMASTER,  false, OldHandler<&ChatHandler::HandlePlayAllCommand>,             "", NULL },
++         // Playerbot mod
++         { "bot",            SEC_ADMINISTRATOR,  false, OldHandler<&ChatHandler::HandlePlayerbotCommand>,           "", NULL },
++         { "maintank",       SEC_PLAYER,  false, OldHandler<&ChatHandler::HandlePlayerbotMainTankCommand>,          "", NULL },
+          { NULL,             0,                  false, NULL,                                           "", NULL }
+      };
+  

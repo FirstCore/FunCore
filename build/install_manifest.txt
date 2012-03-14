@@ -1,0 +1,4 @@
+/home/server/FunCore/release/bin/authserver
+/home/server/FunCore/release/etc/authserver.conf.dist
+/home/server/FunCore/release/bin/worldserver
+/home/server/FunCore/release/etc/worldserver.conf.dist
